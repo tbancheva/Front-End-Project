@@ -1,0 +1,77 @@
+.navbar-custom {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #4B4B4B;
+}
+
+.navbar-custom a {
+  color: white;
+  text-align: center;
+}
+
+.navbar-custom .nav li a:hover {
+  color: #CBCBCB;
+  background-color: transparent;
+}
+
+button.navbar-toggle{
+  background-color: white;
+}
+
+.icon-bar {
+  background-color:#4B4B4B;
+}
+
+@media (min-width: 768px) {
+  .navbar-header{
+    display:none;
+  }
+  .navbar-custom {
+    padding: 20px;
+    background: transparent;
+  }
+}
+
+
+body {
+    background-image: url("images/background_wood2.jpg");
+}
+
+
+#space{
+  height:200px;
+}
+
+#house-banners, #space2{
+  width:80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#description{
+  color:white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+   img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+   }
+}
+
+#iconsSeparator{
+  height:2em;
+}
+
+#houses-header {
+  padding-top: 7rem;
+  width:80%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}

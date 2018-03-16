@@ -1,0 +1,38 @@
+body {
+    background: url(images/valarm.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar-custom {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #4B4B4B;
+}
+
+.navbar-custom a {
+  color: white;
+  text-align: center;
+}
+
+.navbar-custom .nav li a:hover {
+  color: #CBCBCB;
+  background-color: transparent;
+}
+
+button.navbar-toggle{
+  background-color: white;
+}
+
+.icon-bar {
+  background-color:#4B4B4B;
+}
+
+@media (min-width: 768px) {
+  .navbar-header{
+    display:none;
+  }
+  .navbar-custom {
+    padding: 20px;
+    background: transparent;
+  }
+}

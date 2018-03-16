@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Valar morghulis</title>
+  <link rel="stylesheet" name="text/css" href="housesStyle.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="handlebars-v4.0.5.js"></script>
+
+</head>
+
+<body>
+  
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsing-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+           </button>
+          <a class="navbar-brand" href="project.html">Valar Morghulis</a>
+            <div class="collapse navbar-collapse" id="collapsing-menu">
+                 <ul class="nav navbar-nav">
+                    <li><a href="houses.html">Houses</a></li>
+                    <li><a href="religions.html">Religions</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                 </ul>
+            </div>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse">
+       <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a href="project.html">Home</a></li>
+            <li><a href="houses.html">Houses</a></li>
+            <li><a href="religions.html">Religions</a></li>
+            <li><a href="quiz.html">Questionnaire</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+     
+     <img  id="houses-header" src="images/thegreaterhouses.png">
+
+      <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-3">
+                    <a class="page-scroll" href="#stark">
+                     <img src="images/stark_icon2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                 <div class="col-lg-3 col-sm-3">
+                    <a class="page-scroll" href="#lannister">
+                     <img src="images/lannister_icon2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                 <div class="col-lg-3 col-sm-3">
+                    <a class="page-scroll" href="#targaryen">
+                     <img src="images/targaryen_icon2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                 <div class="col-lg-3 col-sm-3">
+                    <a class="page-scroll" href="#arryn">
+                     <img src="images/arryn_icon2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+      <div id="iconsSeparator"></div>
+
+        <div class="container">
+               <div class="row">
+                <div class="col-lg-3 col-sm-3">
+                    <a class="page-scroll" href="#martell">
+                     <img src="images/martell_icon2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                 <div class="col-lg-3 col-sm-3">
+                    <a class="page-scroll" href="#tully">
+                     <img src="images/tully_icon2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                 <div class="col-lg-3 col-sm-3">
+                    <a class="page-scroll" href="#tyrell">
+                     <img src="images/tyrell_icon2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                 <div class="col-lg-3 col-sm-3">
+                    <a class="page-scroll" href="#baratheon">
+                     <img src="images/baratheon_icon2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+     </div>
+
+
+    <div id="space"></div>
+
+
+  <section>
+    <ul class="houses-list-container" ></ul>
+      <script id="houses-template" type="text/x-handlebars-template">
+      {{#each housesBasic}}
+        <li class="house" id="{{photo}}">
+          <img  id="house-banners" src="images/{{photo}}.jpg">
+                 <div id="space2">
+                <p id="description">{{description}}</p>
+                 </div>
+        </li>
+        {{/each}}
+      </script>
+  </section>
+
+  <script src="housesBasicInfo.js"></script> 
+
+
+  </body>
+</html>

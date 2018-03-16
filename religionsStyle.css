@@ -1,0 +1,74 @@
+.navbar-custom {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #4B4B4B;
+}
+
+.navbar-custom a {
+  color: white;
+  text-align: center;
+}
+
+.navbar-custom .nav li a:hover {
+  color: #CBCBCB;
+  background-color: transparent;
+}
+
+button.navbar-toggle{
+  background-color: white;
+}
+
+.icon-bar {
+  background-color:#4B4B4B;
+}
+
+@media (min-width: 768px) {
+  .navbar-header{
+    display:none;
+  }
+  .navbar-custom {
+    padding: 20px;
+    background: transparent;
+  }
+}
+
+body {
+    background-image: url("images/background_wood2.jpg");
+ }
+
+.carousel-inner img {
+    width: 100%;
+ }
+
+.carousel-caption h3 {
+    color: white;
+}
+
+#space{
+  height:200px;
+}
+
+#description, #beliefs{
+  color:white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#space2{
+  width: 80%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#religion-header{
+  text-align: center;
+  color:white;
+}
+
+
+
+
+
+
+
